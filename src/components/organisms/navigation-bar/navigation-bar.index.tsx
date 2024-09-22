@@ -4,11 +4,11 @@ import { NavigationItems } from "./navigation-bar.constants";
 
 const NavigationBar = () => {
   return (
-    <div className="w-full absolute bottom-0 left-0 bg-violet-700 flex justify-evenly items-center py-4">
+    <div className="w-full absolute bottom-0 left-0 py-4 flex justify-evenly items-center bg-white border-t-[1px]">
       {NavigationItems.map(({ label, path, Icon }) => (
         <div key={label}>
           <Link href={path}>
-            <Icon className=" text-white w-6 h-6" />
+            <Icon className="w-6 h-6 text-primary" />
           </Link>
         </div>
       ))}
