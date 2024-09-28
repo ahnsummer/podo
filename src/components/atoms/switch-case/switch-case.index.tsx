@@ -1,12 +1,7 @@
-import { ReactElement } from "react";
-
-type SwitchCaseProps = {
-  data: string;
-  cases: Record<string, ReactElement>;
-};
+import { SwitchCaseProps } from "./switch-case.types";
 
 const SwitchCase = ({ data, cases }: SwitchCaseProps) => {
-  return <div></div>;
+  return cases[data] || null;
 };
 
 export default SwitchCase;
