@@ -14,10 +14,11 @@ const Breadcrumbs = () => {
   }, [currentStep, router.query]);
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-wrap justify-between items-center">
       {breadcrumbs.map(({ step, label }) => (
         <Button
           key={step + label}
+          onClick={() => router.push(label)}
           className={classNames(
             currentStep === label ? "!bg-primary !text-white" : "",
             "border px-2"
