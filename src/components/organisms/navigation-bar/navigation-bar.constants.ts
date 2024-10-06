@@ -14,8 +14,13 @@ export const NavigationItems: NavigationItemProps[] = [
     Icon: FaMagnifyingGlass,
   },
   {
-    label: "tasting-note",
-    path: "/tasting-note/score",
+    label: "user",
+    path: "/user",
     Icon: IoPersonSharp,
   },
+  // {
+  //   label: "tasting-note",
+  //   path: "/tasting-note/score",
+  //   Icon: IoPersonSharp,
+  // },
 ];
